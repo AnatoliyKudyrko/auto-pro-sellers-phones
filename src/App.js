@@ -15,7 +15,7 @@ function App() {
     },[search])
   return (
     <div className="App">
-        <SearchContainer paramsSearch={paramsSearch} paramsSelect={paramsSelect}/>
+        <SearchContainer paramsSearch={paramsSearch} />
         <MainContainer search={search} />
     </div>
   );

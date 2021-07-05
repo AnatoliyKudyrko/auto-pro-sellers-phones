@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/avto-pro-sellers-phones/static/js/main.f57be008.chunk.js",
-    "main.js.map": "/avto-pro-sellers-phones/static/js/main.f57be008.chunk.js.map",
+    "main.js": "/avto-pro-sellers-phones/static/js/main.7cf9806f.chunk.js",
+    "main.js.map": "/avto-pro-sellers-phones/static/js/main.7cf9806f.chunk.js.map",
     "runtime-main.js": "/avto-pro-sellers-phones/static/js/runtime-main.5f272332.js",
     "runtime-main.js.map": "/avto-pro-sellers-phones/static/js/runtime-main.5f272332.js.map",
     "static/js/2.e12de6a7.chunk.js": "/avto-pro-sellers-phones/static/js/2.e12de6a7.chunk.js",
@@ -12,6 +12,6 @@
   "entrypoints": [
     "static/js/runtime-main.5f272332.js",
     "static/js/2.e12de6a7.chunk.js",
-    "static/js/main.f57be008.chunk.js"
+    "static/js/main.7cf9806f.chunk.js"
   ]
 }

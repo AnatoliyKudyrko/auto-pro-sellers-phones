@@ -102,12 +102,12 @@ useEffect(()=>{
             <table className="table w-75 mx-auto">
                 <thead>
                 <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Имя</th>
-                    <th scope="col">Магазин</th>
-                    <th scope="col">URL</th>
-                    <th scope="col">Email</th>
-                    <th scope="col">Телофон</th>
+                    <th scope="col">id</th>
+                    <th scope="col">Имя клиента</th>
+                    <th scope="col">Название магазина</th>
+                    <th scope="col">Ссылка</th>
+                    <th scope="col">Почта</th>
+                    <th scope="col">Телефон</th>
                     <th scope="col">Статус</th>
                 </tr>
                 </thead>
@@ -115,12 +115,12 @@ useEffect(()=>{
                 {data.map((item)=> (
                     <tr key={item.id}>
                         <th scope="row">{item.id}</th>
-                        <td>{item.name ? item.name : '--'}</td>
-                        <td>{item.shop ? item.shop : '--'}</td>
-                        <td>{item.url ? <a href={`${item.url}`}>{item.url}</a> : '--'}</td>
-                        <td>{item.email ? item.email : '--'}</td>
+                        <td>{item.name ? item.name : '—'}</td>
+                        <td>{item.shop ? item.shop : '—'}</td>
+                        <td>{item.url ? <a href={`${item.url}`}>{item.url}</a> : '—'}</td>
+                        <td>{item.email ? item.email : '—'}</td>
                         <td>{item.phone ? item.phone.map((item,i)=><li style={{listStyle:'none'}} key={i}>
-                            <a href={`tel:+${item}`}>{item}</a></li>) : '--'}</td>
+                            <a href={`tel:+${item}`}>+{item}</a></li>) : '—'}</td>
                         <td><ButtonItem status={item.status} handleClick={handleClick} id={item.id}/></td>
                     </tr>
                 ))}

@@ -7,12 +7,8 @@ import "firebase/database";
 
 function App() {
     const [search,setSearch] = useState('');
-    const [select,setSelect] = useState('1');
     const paramsSearch=(str)=>{
         setSearch(str);
-    }
-    const paramsSelect=(str)=>{
-        setSelect(str);
     }
     useEffect(()=>{
 
@@ -20,12 +16,12 @@ function App() {
   return (
     <div className="App">
         <SearchContainer paramsSearch={paramsSearch} paramsSelect={paramsSelect}/>
-        <MainContainer search={search} select={select} />
+        <MainContainer search={search} />
     </div>
   );
 }
 
-const SearchContainer = ({paramsSearch,paramsSelect}) => {
+const SearchContainer = ({paramsSearch}) => {
     const [value,setValue] = useState('');
     const handleChange = (e)=>{
         setValue(e.target.value);
@@ -38,6 +34,7 @@ const SearchContainer = ({paramsSearch,paramsSelect}) => {
         paramsSearch(value);
         setValue('');
     };
+
 
     return (
     <>
